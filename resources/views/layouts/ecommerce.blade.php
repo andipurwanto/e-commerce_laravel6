@@ -81,10 +81,10 @@
                                     </li>
                                     <hr>
                                     <li class="nav-item">
-                                        <a href="#" class="icons">
-                                            <i class="lnr lnr lnr-cart"></i>
+                                        <a href="{{ route('front.list_cart') }}" class="icons">
+                                          <i class="lnr lnr lnr-cart"></i>
                                         </a>
-                                    </li>
+                                      </li>
                                     <hr>
                                 </ul>
                             </div>

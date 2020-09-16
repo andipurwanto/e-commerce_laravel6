@@ -12,7 +12,7 @@
 - Template CoreUI
 
 ## Download dan Install
-- git clone <link github>
+- git clone https://github.com/andipurwanto/e-commerce_laravel6
 - cd (nama repo) atau buka folder dengan VS code klik ctrl+(tombol diatas TAB)
 - composer install
 - cp .env.example .env (ganti nama database sesuai database yang digunakan)

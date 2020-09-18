@@ -31,9 +31,14 @@
                 </div>
                 <div class="float-right">
                     <ul class="right_side">
-                        <li><a href="login.html">Login/Register</a></li>
+                        {{-- <li><a href="{{ route('customer.login') }}">Login</a></li> --}}
+                        @if (auth()->guard('customer')->check())
+                        <li><a href="{{ route('customer.logout') }}">Logout</a></li>
+                        @else
+                        <li><a href="{{ route('customer.login') }}">Login</a></li>
+                        @endif
                         <li><a href="#">My Account</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></l    i>
                     </ul>
                 </div>
             </div>
@@ -82,9 +87,9 @@
                                     <hr>
                                     <li class="nav-item">
                                         <a href="{{ route('front.list_cart') }}" class="icons">
-                                          <i class="lnr lnr lnr-cart"></i>
+                                            <i class="lnr lnr lnr-cart"></i>
                                         </a>
-                                      </li>
+                                    </li>
                                     <hr>
                                 </ul>
                             </div>
